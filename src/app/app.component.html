@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <h1>
+        Crud customers
+        <br />
+      </h1>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Register new customer
+      </button>
+      <br />
+      <div class="table-responsive ps">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Surname</th>
+              <th scope="col">Nº ID</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">ID Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>jeusre@gmail.com</td>
+              <td>3004643593</td>
+              <td>122174845667</td>
+              <td class="td-actions text-right">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  delete
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>jeusre@gmail.com</td>
+              <td>3004643593</td>
+              <td>122174845667</td>
+              <td class="td-actions text-right">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  delete
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>jeusre@gmail.com</td>
+              <td>3004643593</td>
+              <td>122174845667</td>
+              <td class="td-actions text-right">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  delete
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Register form
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <label for="" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col">
+                  <label for="" class="form-label">Surname</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="" class="from-label"> Type id</label>
+                <select class="form-select" aria-label="Type id">
+                  <option selected>Type id</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Nª id</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="n_id"
+                  placeholder="nª id"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Email address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Phone"
+                  placeholder="Phone"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal edit -->
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit form</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <label for="" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col">
+                  <label for="" class="form-label">Surname</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="" class="from-label"> Type id</label>
+                <select class="form-select" aria-label="Type id">
+                  <option selected>Type id</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Nª id</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="n_id"
+                  placeholder="nª id"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Email address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Phone"
+                  placeholder="Phone"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
